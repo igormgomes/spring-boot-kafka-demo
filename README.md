@@ -1,5 +1,5 @@
 # Spring Boot Kakfa Demo
-### Running application with docker
+### Running kakfa
 ```
 docker-compose up
 ```
