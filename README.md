@@ -1,3 +1,11 @@
 # Spring Boot Kakfa Demo
-Running kafka 
-docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=127.0.0.1 --env ADVERTISED_PORT=9092 spotify/kafka
+### Running application with docker
+```
+docker-compose up
+```
+
+### For use api
+```
+curl -X POST http://localhost:8080/kafka/publish
+curl -d "message=publish-message" -X POST http://localhost:8080/kafka/publish
+```
